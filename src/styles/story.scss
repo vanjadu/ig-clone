@@ -1,0 +1,18 @@
+@import '../styles/properties';
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 0.5em;
+  &:first-child {
+    margin-left: 1em;
+  }
+  &:last-child {
+    margin-right: 1em;
+  }
+  &__acount-name {
+      font-size: .65em;
+      margin: .4em;
+  }
+}

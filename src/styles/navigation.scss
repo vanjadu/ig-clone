@@ -1,0 +1,57 @@
+@import './properties';
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-white;
+  border-bottom: 1px solid $border-color-grey;
+  &__container {
+    padding: 1em 0 0 0.9em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__logo {
+    padding: 0 1em;
+    width: 100px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__search {
+    border: 1px solid $border-color-grey;
+    border-radius: 3px;
+    background-color: $background-grey;
+    min-width: 225px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__search-icon {
+      width: 15px;
+      opacity: .4;
+      margin-right: .3em;
+  }
+  &__search-text {
+      color: $font-color-secondary;
+      font-size: .85em;
+      font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    .nav-search {
+        display: none;
+    }
+}
